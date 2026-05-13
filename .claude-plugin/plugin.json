@@ -1,0 +1,6 @@
+{
+  "name": "cost-check",
+  "version": "0.1.0",
+  "description": "Show token usage for the last message and full session, benchmarked against Claude Pro, Max 5x, and Max 20x plan windows.",
+  "author": "Simeon Superville"
+}
