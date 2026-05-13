@@ -12,9 +12,9 @@ def fmt(n):
     return str(n)
 
 PLANS = [
-    ('Pro     ($20/mo   ~44k )', 44_000),
-    ('Max 5x  ($100/mo  ~88k )', 88_000),
-    ('Max 20x ($200/mo ~220k )', 220_000),
+    ('Pro     ($20/mo  ~326k )', 326_000),
+    ('Max 5x  ($100/mo ~1.63M)', 1_630_000),
+    ('Max 20x ($200/mo ~6.52M)', 6_520_000),
 ]
 
 project_dir = os.path.expanduser("~/.claude/projects")

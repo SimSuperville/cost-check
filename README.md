@@ -12,14 +12,14 @@ Run `/cost-check` and get an instant summary like:
   Session (24 turns)     180.3k     8.1k    188.4k
 
   LAST MESSAGE  ── as % of 5-hr plan window
-  Pro     ($20/mo   ~44k )  ██████░░░░░░░░░░░░░░   30.1%
-  Max 5x  ($100/mo  ~88k )  ███░░░░░░░░░░░░░░░░░   15.0%
-  Max 20x ($200/mo ~220k )  █░░░░░░░░░░░░░░░░░░░    6.0%
+  Pro     ($20/mo  ~326k )  ░░░░░░░░░░░░░░░░░░░░    4.1%
+  Max 5x  ($100/mo ~1.63M)  ░░░░░░░░░░░░░░░░░░░░    0.8%
+  Max 20x ($200/mo ~6.52M)  ░░░░░░░░░░░░░░░░░░░░    0.2%
 
   SESSION TOTAL ── as % of 5-hr plan window
-  Pro     ($20/mo   ~44k )  ████████████░░░░░░░░   60.2%
-  Max 5x  ($100/mo  ~88k )  ██████░░░░░░░░░░░░░░   30.1%
-  Max 20x ($200/mo ~220k )  ██░░░░░░░░░░░░░░░░░░   12.0%
+  Pro     ($20/mo  ~326k )  ████████████░░░░░░░░   57.8%
+  Max 5x  ($100/mo ~1.63M)  ██░░░░░░░░░░░░░░░░░░   11.6%
+  Max 20x ($200/mo ~6.52M)  ░░░░░░░░░░░░░░░░░░░░    2.9%
 
   MCP & SKILL INSIGHTS  ── est. tokens added to context
   MCP calls                  5 calls    ~13.9k tokens
@@ -65,7 +65,7 @@ Or add this to your `~/.claude/settings.json` upfront:
 - Compares against approximate per-plan 5-hour window limits.
 - Detects MCP tool calls (`mcp__*`) and Skill calls, then estimates the tokens each one added to context by measuring the character length of their tool-result payloads (≈ chars / 4).
 
-Plan limits are estimates based on observed quotas — not official numbers.
+Plan limits are estimates based on community-observed quotas and Anthropic's official 5×/20× Max-to-Pro ratios — not authoritative caps. See [`docs/plan-limits.md`](docs/plan-limits.md) for the full sourcing and derivation. Anthropic does not publish exact Claude Code token budgets and can change them dynamically, so treat these as soft benchmarks.
 
 ## Manual install (no plugin)
 
