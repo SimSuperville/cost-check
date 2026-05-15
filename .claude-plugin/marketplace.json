@@ -1,0 +1,23 @@
+{
+  "name": "cost-check",
+  "owner": {
+    "name": "Simeon Superville"
+  },
+  "description": "Token-usage tracking for Claude Code sessions, benchmarked against Pro, Max 5x, and Max 20x plan windows.",
+  "plugins": [
+    {
+      "name": "cost-check",
+      "source": "./",
+      "description": "Show token usage for the last message and full session, with an MCP/Skill payload breakdown.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simeon Superville"
+      },
+      "homepage": "https://github.com/SimSuperville/cost-check",
+      "repository": "https://github.com/SimSuperville/cost-check",
+      "license": "MIT",
+      "keywords": ["tokens", "usage", "cost", "mcp", "skills"],
+      "category": "productivity"
+    }
+  ]
+}
